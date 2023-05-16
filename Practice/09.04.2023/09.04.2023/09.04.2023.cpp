@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-void spacetoTab(char*& string)
+void spaceToTab(char*& string)
 {
     for (int i = 0; i < 52; i++)
     {
@@ -127,7 +127,7 @@ int main()
 
     cout << "Enter line: "; cin.getline(string, 50);
 
-    spacetoTab(string);
+    spaceToTab(string);
 
     for (int i = 0; i < 51; i++)
     {
