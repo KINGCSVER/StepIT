@@ -90,8 +90,6 @@ public:
 	}
 };
 
-
-
 int main()
 {
 	int numer1{}, numer2{}, denom1{}, denom2{};
