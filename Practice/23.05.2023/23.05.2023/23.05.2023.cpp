@@ -154,6 +154,8 @@ int main()
 
 	student.addInstitution();
 
+	system("cls");
+
 	student.addStudent();
 
 	system("cls");
