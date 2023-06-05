@@ -1,7 +1,10 @@
 #include "CPU.h"
 
-CPU::CPU(string make, string model, string serialNumber, string cores, string clock, string socket) : Components(make, model, serialNumber)
+CPU::CPU(string make, string model, string serialNumber, string cores, string clock, string socket)
 {
+	this->make = make;
+	this->model = model;
+	this->serialNumber = serialNumber;
 	this->cores = cores;
 	this->clock = clock;
 	this->socket = socket;
@@ -70,9 +73,9 @@ void CPU::setCPUSocket()
 void CPU::printCPUInfo() const
 {
 	cout << "CPU make: " << this->make << endl
-		<< "CPU model: " << this->model << endl
-		<< "CPU serial number: " << this->serialNumber << endl
-		<< "CPU cores: " << this->cores << endl
-		<< "CPU clock: " << this->clock << endl
-		<< "CPU socket: " << this->socket << endl;
+		 << "CPU model: " << this->model << endl
+		 << "CPU serial number: " << this->serialNumber << endl
+		 << "CPU cores: " << this->cores << endl
+		 << "CPU clock: " << this->clock << endl
+		 << "CPU socket: " << this->socket << endl;
 }

@@ -1,7 +1,10 @@
 #include "Drive.h"
 
-Drive::Drive(string make, string model, string serialNumber, string type, string capacity) : Components(make, model, serialNumber)
+Drive::Drive(string make, string model, string serialNumber, string type, string capacity)
 {
+	this->make = make;
+	this->model = model;
+	this->serialNumber = serialNumber;
 	this->type = type;
 	this->capacity = capacity;
 }
@@ -59,8 +62,8 @@ void Drive::setDriveCapacity()
 void Drive::printDriveInfo() const
 {
 	cout << "Drive make: " << this->make << endl
-		<< "Drive model: " << this->model << endl
-		<< "Drive serial number: " << this->serialNumber << endl
-		<< "Drive type: " << this->type << endl
-		<< "Drive pins: " << this->capacity << endl;
+		 << "Drive model: " << this->model << endl
+		 << "Drive serial number: " << this->serialNumber << endl
+		 << "Drive type: " << this->type << endl
+		 << "Drive pins: " << this->capacity << endl;
 }

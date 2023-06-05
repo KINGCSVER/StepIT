@@ -1,18 +1,20 @@
 #pragma once
 #include <iostream>
-#include "Components.h"
 
 using namespace std;
 
-class PowerSupply : public Components
+class PowerSupply
 {
 private:
+	string make;
+	string model;
+	string serialNumber;
 	string voltage;
 	string power;
 public:
 	PowerSupply() = default;
 
-	PowerSupply(string make, string model, string serialNumber, string voltage, string power) : Components(make, model, serialNumber) {};
+	PowerSupply(string make, string model, string serialNumber, string voltage, string power);
 
 	string getPowerSupplyMake() const;
 	string getPowerSupplyModel() const;

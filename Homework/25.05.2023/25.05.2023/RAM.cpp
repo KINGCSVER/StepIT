@@ -1,7 +1,10 @@
 #include "RAM.h"
 
-RAM::RAM(string make, string model, string serialNumber, string type, string pins, string speed) : Components(make, model, serialNumber)
+RAM::RAM(string make, string model, string serialNumber, string type, string pins, string speed)
 {
+	this->make = make;
+	this->model = model;
+	this->serialNumber = serialNumber;
 	this->type = type;
 	this->pins = pins;
 	this->speed = speed;
@@ -70,9 +73,9 @@ void RAM::setRAMSpeed()
 void RAM::printRAMInfo() const
 {
 	cout << "RAM make: " << this->make << endl
-		<< "RAM model: " << this->model << endl
-		<< "RAM serial number: " << this->serialNumber << endl
-		<< "RAM type: " << this->type << endl
-		<< "RAM pins: " << this->pins << endl
-		<< "RAM speed: " << this->speed << endl;
+		 << "RAM model: " << this->model << endl
+		 << "RAM serial number: " << this->serialNumber << endl
+		 << "RAM type: " << this->type << endl
+		 << "RAM pins: " << this->pins << endl
+		 << "RAM speed: " << this->speed << endl;
 }

@@ -1,7 +1,10 @@
 #include "PowerSupply.h"
 
-PowerSupply::PowerSupply(string make, string model, string serialNumber, string voltage, string power) : Components(make, model, serialNumber)
+PowerSupply::PowerSupply(string make, string model, string serialNumber, string voltage, string power)
 {
+	this->make = make;
+	this->model = model;
+	this->serialNumber = serialNumber;
 	this->voltage = voltage;
 	this->power = power;
 }
@@ -59,8 +62,8 @@ void PowerSupply::setDPowerSupplyPower()
 void PowerSupply::printPowerSupplyInfo() const
 {
 	cout << "Power supply make: " << this->make << endl
-		<< "Power supply model: " << this->model << endl
-		<< "Power supply serial number: " << this->serialNumber << endl
-		<< "Power supply voltage: " << this->voltage << endl
-		<< "Power supply power: " << this->power << endl;
+		 << "Power supply model: " << this->model << endl
+		 << "Power supply serial number: " << this->serialNumber << endl
+		 << "Power supply voltage: " << this->voltage << endl
+		 << "Power supply power: " << this->power << endl;
 }

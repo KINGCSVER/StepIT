@@ -1,19 +1,21 @@
 #pragma once
-#include "Components.h"
 #include <iostream>
 
 using namespace std;
 
-class CPU : public Components
+class CPU
 {
 private:
+	string make;
+	string model;
+	string serialNumber;
 	string cores;
 	string clock;
 	string socket;
 public:
 	CPU() = default;
 
-	CPU(string make, string model, string serialNumber, string cores, string clock, string socket) : Components(make, model, serialNumber) {};
+	CPU(string make, string model, string serialNumber, string cores, string clock, string socket);
 
 	string getCPUMake() const;
 	string getCPUModel() const;

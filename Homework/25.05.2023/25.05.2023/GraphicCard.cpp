@@ -1,7 +1,10 @@
 #include "GraphicCard.h"
 
-GraphicCard::GraphicCard(string make, string model, string serialNumber, string CUDACores, string memoryType, string cooler) : Components(make, model, serialNumber)
+GraphicCard::GraphicCard(string make, string model, string serialNumber, string CUDACores, string memoryType, string cooler)
 {
+	this->make = make;
+	this->model = model;
+	this->serialNumber = serialNumber;
 	this->CUDACores = CUDACores;
 	this->memoryType = memoryType;
 	this->cooler = cooler;
@@ -70,9 +73,9 @@ void GraphicCard::setGPUCooler()
 void GraphicCard::printGPUInfo() const
 {
 	cout << "GPU make: " << this->make << endl
-		<< "GPU model: " << this->model << endl
-		<< "GPU serial number: " << this->serialNumber << endl
-		<< "GPU CUDA cores: " << this->CUDACores << endl
-		<< "GPU memory type: " << this->memoryType << endl
-		<< "GPU Cooler" << this->cooler << endl;
+		 << "GPU model: " << this->model << endl
+		 << "GPU serial number: " << this->serialNumber << endl
+		 << "GPU CUDA cores: " << this->CUDACores << endl
+		 << "GPU memory type: " << this->memoryType << endl
+		 << "GPU Cooler" << this->cooler << endl;
 }

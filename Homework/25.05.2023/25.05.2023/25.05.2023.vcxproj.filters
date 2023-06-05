@@ -15,13 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="28.05.2023.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Case.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Motherboard.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="CPU.cpp">
@@ -33,23 +27,17 @@
     <ClCompile Include="RAM.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="PowerSupply.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Drive.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Components.cpp">
+    <ClCompile Include="Motherboard.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PowerSupply.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Case.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Motherboard.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="CPU.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -59,13 +47,13 @@
     <ClInclude Include="RAM.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="PowerSupply.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Drive.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Components.h">
+    <ClInclude Include="Motherboard.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PowerSupply.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

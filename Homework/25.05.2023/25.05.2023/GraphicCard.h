@@ -1,19 +1,21 @@
 #pragma once
 #include <iostream>
-#include "Components.h"
 
 using namespace std;
 
-class GraphicCard : public Components
+class GraphicCard
 {
 private:
+	string make;
+	string model;
+	string serialNumber;
 	string CUDACores;
 	string memoryType;
 	string cooler;
 public:
 	GraphicCard() = default;
 
-	GraphicCard(string make, string model, string serialNumber, string CUDACores, string memoryType, string cooler) : Components(make, model, serialNumber) {};
+	GraphicCard(string make, string model, string serialNumber, string CUDACores, string memoryType, string cooler);
 
 	string getGPUMake() const;
 	string getGPUModel() const;

@@ -1,19 +1,21 @@
 #pragma once
 #include <iostream>
-#include "Components.h"
 
 using namespace std;
 
-class RAM : public Components
+class RAM
 {
 private:
+	string make;
+	string model;
+	string serialNumber;
 	string type;
 	string pins;
 	string speed;
 public:
 	RAM() = default;
 
-	RAM(string make, string model, string serialNumber, string type, string pins, string speed) : Components(make, model, serialNumber) {};
+	RAM(string make, string model, string serialNumber, string type, string pins, string speed);
 
 	string getRAMMake() const;
 	string getRAMModel() const;
