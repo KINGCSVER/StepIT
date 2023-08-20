@@ -17,6 +17,8 @@ public:
 	SystemUnit(string& _make, string& _model, MotherBoard& _motherBoard,
 		PowerUnit& _powerUnit, HardDisk& _storageDevice, Cooler& _cooler);
 
+	SystemUnit(const SystemUnit& _systemUnit);
+
 	string getMake() const;
 	string getModel() const;
 

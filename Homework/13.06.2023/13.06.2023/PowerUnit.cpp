@@ -11,6 +11,16 @@ PowerUnit::PowerUnit(string& _make, string& _model, uint16_t& _power,
 	*this->efficiency = _efficiency;
 }
 
+PowerUnit::PowerUnit(const PowerUnit& _powerUnit)
+{
+	this->make = _powerUnit.make;
+	this->model = _powerUnit.model;
+	this->power = new uint16_t(*_powerUnit.power);
+	this->tension = new uint16_t(*_powerUnit.tension);
+	this->current = new uint16_t(*_powerUnit.current);
+	this->efficiency = new uint16_t(*_powerUnit.efficiency);
+}
+
 string PowerUnit::getMake() const
 {
 	return this->make;

@@ -16,6 +16,8 @@ public:
 	GraphicCard(string& _make, string& _model, string& _CUDA,
 		uint16_t& _frequency, uint16_t& _powerConsumption, uint16_t& _transistors);
 
+	GraphicCard(const GraphicCard& _graphicCard);
+
 	string getMake() const;
 	string getModel() const;
 	string getCUDA() const;

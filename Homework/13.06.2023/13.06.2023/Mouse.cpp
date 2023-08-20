@@ -15,6 +15,19 @@ Mouse::Mouse(string& _make, string& _model, string& _sensortype, string& _connec
 	*this->weight = _weight;
 }
 
+Mouse::Mouse(const Mouse& _mouse)
+{
+	this->make = _mouse.make;
+	this->model = _mouse.model;
+	this->sensorType = _mouse.sensorType;
+	this->connectionType = _mouse.connectionType;
+	this->frequency = new uint16_t(*_mouse.frequency);
+	this->numberOfButtons = new uint16_t(*_mouse.numberOfButtons);
+	this->responseTime = new uint16_t(*_mouse.responseTime);
+	this->DPI = new uint16_t(*_mouse.DPI);
+	this->weight = new uint16_t(*_mouse.weight);
+}
+
 string Mouse::getMake() const
 {
 	return this->make;

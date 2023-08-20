@@ -10,9 +10,11 @@ private:
 public:
 	RAM* ram{};
 	CPU* cpu{};
-	GraphicCard* graphicCarD{};
+	GraphicCard* graphicCard{};
 
 	MotherBoard(string& _make, string& _model, RAM& _RAM, CPU& _CPU, GraphicCard& _graphicCard);
+
+	MotherBoard(const MotherBoard& _motherBoard);
 
 	string getMake() const;
 	string getModel() const;

@@ -11,6 +11,16 @@ SystemUnit::SystemUnit(string& _make, string& _model, MotherBoard& _motherBoard,
 	this->cooler = new Cooler(_cooler);
 }
 
+SystemUnit::SystemUnit(const SystemUnit& _systemUnit)
+{
+	this->make = _systemUnit.make;
+	this->model = _systemUnit.model;
+	this->motherBoardd = new MotherBoard(*_systemUnit.motherBoardd);
+	this->powerUnitt = new PowerUnit(*_systemUnit.powerUnitt);
+	this->hardDiskk = new HardDisk(*_systemUnit.hardDiskk);
+	this->cooler = new Cooler(*_systemUnit.cooler);
+}
+
 string SystemUnit::getMake() const
 {
 	return this->make;

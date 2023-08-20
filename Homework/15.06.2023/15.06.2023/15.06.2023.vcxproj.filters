@@ -15,81 +15,81 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="13.06.2023.cpp">
+    <ClCompile Include="15.06.2023.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Computer.cpp">
+    <ClCompile Include="..\..\13.06.2023\13.06.2023\Computer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Cooler.cpp">
+    <ClCompile Include="..\..\13.06.2023\13.06.2023\Cooler.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="CPU.cpp">
+    <ClCompile Include="..\..\13.06.2023\13.06.2023\GraphicCard.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="GraphicCard.cpp">
+    <ClCompile Include="..\..\13.06.2023\13.06.2023\CPU.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="HardDisk.cpp">
+    <ClCompile Include="..\..\13.06.2023\13.06.2023\HardDisk.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Keyboard.cpp">
+    <ClCompile Include="..\..\13.06.2023\13.06.2023\Keyboard.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Monitor.cpp">
+    <ClCompile Include="..\..\13.06.2023\13.06.2023\Monitor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="MotherBoard.cpp">
+    <ClCompile Include="..\..\13.06.2023\13.06.2023\MotherBoard.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Mouse.cpp">
+    <ClCompile Include="..\..\13.06.2023\13.06.2023\Mouse.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="PowerUnit.cpp">
+    <ClCompile Include="..\..\13.06.2023\13.06.2023\PowerUnit.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="RAM.cpp">
+    <ClCompile Include="..\..\13.06.2023\13.06.2023\RAM.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="SystemUnit.cpp">
+    <ClCompile Include="..\..\13.06.2023\13.06.2023\SystemUnit.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Computer.h">
+    <ClInclude Include="..\..\13.06.2023\13.06.2023\Computer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Cooler.h">
+    <ClInclude Include="..\..\13.06.2023\13.06.2023\Cooler.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CPU.h">
+    <ClInclude Include="..\..\13.06.2023\13.06.2023\CPU.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="GraphicCard.h">
+    <ClInclude Include="..\..\13.06.2023\13.06.2023\GraphicCard.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="HardDisk.h">
+    <ClInclude Include="..\..\13.06.2023\13.06.2023\HardDisk.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Keyboard.h">
+    <ClInclude Include="..\..\13.06.2023\13.06.2023\Keyboard.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Monitor.h">
+    <ClInclude Include="..\..\13.06.2023\13.06.2023\Monitor.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="MotherBoard.h">
+    <ClInclude Include="..\..\13.06.2023\13.06.2023\PowerUnit.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Mouse.h">
+    <ClInclude Include="..\..\13.06.2023\13.06.2023\RAM.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="PowerUnit.h">
+    <ClInclude Include="..\..\13.06.2023\13.06.2023\SystemUnit.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="RAM.h">
+    <ClInclude Include="..\..\13.06.2023\13.06.2023\MotherBoard.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="SystemUnit.h">
+    <ClInclude Include="..\..\13.06.2023\13.06.2023\Mouse.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

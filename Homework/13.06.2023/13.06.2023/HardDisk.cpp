@@ -12,6 +12,17 @@ HardDisk::HardDisk(string& _make, string& _model, uint16_t& _readingSpeed, uint1
 	*this->capacity = _capacity;
 }
 
+HardDisk::HardDisk(const HardDisk& _hardDisk)
+{
+	this->make = _hardDisk.make;
+	this->model = _hardDisk.model;
+	this->readingSpeed = new uint16_t(*_hardDisk.readingSpeed);
+	this->writeSpeed = new uint16_t(*_hardDisk.writeSpeed);
+	this->powerConsumption = new uint16_t(*_hardDisk.powerConsumption);
+	this->weight - new uint16_t(*_hardDisk.weight);
+	this->capacity = new uint16_t(*_hardDisk.capacity);
+}
+
 string HardDisk::getMake() const
 {
 	return this->make;

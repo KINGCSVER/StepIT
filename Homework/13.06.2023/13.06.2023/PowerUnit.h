@@ -16,8 +16,11 @@ public:
 	PowerUnit(string& _make, string& _model, uint16_t& _power,
 		uint16_t& _tension, uint16_t& _current, uint16_t& _efficiency);
 
+	PowerUnit(const PowerUnit& _powerUnit);
+
 	string getMake() const;
 	string getModel() const;
+
 	uint16_t getPower() const;
 	uint16_t getTension() const;
 	uint16_t getCurrent() const;

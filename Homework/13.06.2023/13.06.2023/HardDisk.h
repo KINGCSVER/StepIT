@@ -17,6 +17,8 @@ public:
 	HardDisk(string& _make, string& _model, uint16_t& _readingSpeed, uint16_t& _writeSpeed
 		, uint16_t& _powerConsumption, uint16_t& _weight, uint16_t& _capacity);
 
+	HardDisk(const HardDisk& _hardDisk);
+
 	string getMake() const;
 	string getModel() const;
 

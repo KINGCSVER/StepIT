@@ -16,6 +16,20 @@ Monitor::Monitor(string& _make, string& _model, string& _screenCover, string& _b
 	*this->maximumScreenRefreshRate = _maximumScreenRefreshRate;
 }
 
+Monitor::Monitor(const Monitor& _monitor)
+{
+	this->make = _monitor.make;
+	this->model = _monitor.model;
+	this->screenCover = _monitor.screenCover;
+	this->brightness = _monitor.brightness;
+	this->contrast = _monitor.contrast;
+	this->maximumResolution = new uint16_t(*_monitor.maximumResolution);
+	this->pixelResponseTime = new uint16_t(*_monitor.pixelResponseTime);
+	this->pixelSize = new uint16_t(*_monitor.pixelSize);
+	this->pixelDensity = new uint16_t(*_monitor.pixelDensity);
+	this->maximumScreenRefreshRate = new uint16_t(*_monitor.maximumScreenRefreshRate);
+}
+
 string Monitor::getMake() const
 {
 	return this->make;

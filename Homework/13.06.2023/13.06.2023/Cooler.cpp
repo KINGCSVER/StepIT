@@ -16,6 +16,21 @@ Cooler::Cooler(string& _make, string& _model, string& _purpose, string& _socket,
 	*this->weight = _weight;
 }
 
+Cooler::Cooler(const Cooler& _Cooler)
+{
+	this->make = _Cooler.make;
+	this->model = _Cooler.model;
+	this->purpose = _Cooler.purpose;
+	this->socket = _Cooler.socket;
+	this->connectorType = _Cooler.connectorType;
+	this->material = _Cooler.material;
+	this->numberOfHeatPipes = new uint16_t(*_Cooler.numberOfHeatPipes);
+	this->numberOfFans = new uint16_t(*_Cooler.numberOfFans);
+	this->rotationalSpeed = new uint16_t(*_Cooler.rotationalSpeed);
+	this->noiseLevel = new uint16_t(*_Cooler.noiseLevel);
+	this->weight = new uint16_t(*_Cooler.weight);
+}
+
 string Cooler::getMake() const
 {
 	return this->make;

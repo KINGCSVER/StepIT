@@ -11,6 +11,16 @@ GraphicCard::GraphicCard(string& _make, string& _model, string& _CUDA,
 	*this->transistors = _transistors;
 }
 
+GraphicCard::GraphicCard(const GraphicCard& _graphicCard)
+{
+	this->make = _graphicCard.make;
+	this->model = _graphicCard.model;
+	this->CUDA = _graphicCard.CUDA;
+	this->frequency = new uint16_t(*_graphicCard.frequency);
+	this->powerConsumption = new uint16_t(*_graphicCard.powerConsumption);
+	this->transistors = new uint16_t(*_graphicCard.transistors);
+}
+
 string GraphicCard::getMake() const
 {
 	return this->make;

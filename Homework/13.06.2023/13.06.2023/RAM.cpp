@@ -12,6 +12,17 @@ RAM::RAM(string& _make, string& _model, string& _formFactor, uint16_t& _clockFre
 	*this->volume = _volume;
 }
 
+RAM::RAM(const RAM& _RAM)
+{
+	this->make = _RAM.make;
+	this->model = _RAM.model;
+	this->formFactor = _RAM.formFactor;
+	this->clockFrequency = new uint16_t(*_RAM.clockFrequency);
+	this->throughput = new uint16_t(*_RAM.throughput);
+	this->timings = new uint16_t(*_RAM.timings);
+	this->volume = new uint16_t(*_RAM.volume);
+}
+
 string RAM::getMake() const
 {
 	return this->make;

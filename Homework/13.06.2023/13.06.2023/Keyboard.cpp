@@ -12,6 +12,17 @@ Keyboard::Keyboard(string& _make, string& _model, string& _type, string& _connec
 	*this->pollingFrequency = _pollingFrequency;
 }
 
+Keyboard::Keyboard(const Keyboard& _keyboard)
+{
+	this->make = _keyboard.make;
+	this->model = _keyboard.model;
+	this->type = _keyboard.type;
+	this->connectionType = _keyboard.connectionType;
+	this->spillResistance = _keyboard.spillResistance;
+	this->compatibleWithOC = _keyboard.compatibleWithOC;
+	this->pollingFrequency = new uint16_t(*_keyboard.pollingFrequency);
+}
+
 string Keyboard::getMake() const
 {
 	return this->make;

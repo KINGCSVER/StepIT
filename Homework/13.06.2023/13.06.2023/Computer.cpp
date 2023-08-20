@@ -4,10 +4,20 @@ Computer::Computer(string& _make, string& _model, SystemUnit& _SystemUnit, Monit
 {
 	this->make = _make;
 	this->model = _model;
-	this->SystemUnit = new SystemUnit(_SystemUnit);
-	this->Monitor = new Monitor(_Monitor);
-	this->Keyboard = new Keyboard(_Keyboard);
-	this->Mouse = new Mouse(_Mouse);
+	this->systemUnit = new SystemUnit(_SystemUnit);
+	this->monitor = new Monitor(_Monitor);
+	this->keyboard = new Keyboard(_Keyboard);
+	this->mouse = new Mouse(_Mouse);
+}
+
+Computer::Computer(const Computer& _Computer)
+{
+	this->make = _Computer.make;
+	this->model = _Computer.model;
+	this->systemUnit = new SystemUnit(*_Computer.systemUnit);
+	this->monitor = new Monitor(*_Computer.monitor);
+	this->keyboard = new Keyboard(*_Computer.keyboard);
+	this->mouse = new Mouse(*_Computer.mouse);
 }
 
 string Computer::getMake() const
@@ -26,8 +36,8 @@ void Computer::printDataComputer() const
 		<< "Computer make: " << this->make << endl
 		<< "Computer model: " << this->model << endl;
 
-	this->SystemUnit->printDataSystemUnit();
-	this->Monitor->printDataMonitor();
-	this->Keyboard->printDataKeyboard();
-	this->Mouse->printDataMouse();
+	this->systemUnit->printDataSystemUnit();
+	this->monitor->printDataMonitor();
+	this->keyboard->printDataKeyboard();
+	this->mouse->printDataMouse();
 }

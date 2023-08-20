@@ -6,7 +6,16 @@ MotherBoard::MotherBoard(string& _make, string& _model, RAM& _RAM, CPU& _CPU, Gr
 	this->model = _model;
 	this->ram = new RAM(_RAM);
 	this->cpu = new CPU(_CPU);
-	this->graphicCarD = new GraphicCard(_graphicCard);
+	this->graphicCard = new GraphicCard(_graphicCard);
+}
+
+MotherBoard::MotherBoard(const MotherBoard& _motherBoard)
+{
+	this->make = _motherBoard.make;
+	this->model = _motherBoard.model;
+	this->ram = new RAM(*_motherBoard.ram);
+	this->cpu = new CPU(*_motherBoard.cpu);
+	this->graphicCard = new GraphicCard(*_motherBoard.graphicCard);
 }
 
 string MotherBoard::getMake() const
@@ -27,5 +36,5 @@ void MotherBoard::printDataMotherBoard() const
 
 	this->ram->printDataRAM();
 	this->cpu->printDataCPU();
-	this->graphicCarD->pruitnDataGraphicCard();
+	this->graphicCard->pruitnDataGraphicCard();
 }

@@ -16,6 +16,8 @@ public:
 
 	Computer(string& _make, string& _model, SystemUnit& _SystemUnit, Monitor& Monitor, Keyboard& Keyboard, Mouse& _Mouse);
 
+	Computer(const Computer& _Computer);
+
 	string getMake() const;
 	string getModel() const;
 

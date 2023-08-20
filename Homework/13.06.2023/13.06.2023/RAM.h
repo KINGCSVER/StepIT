@@ -17,6 +17,8 @@ public:
 	RAM(string& _make, string& _model, string& _formFactor, uint16_t& _clockFrequency,
 		uint16_t& _throughput, uint16_t& _timings, uint16_t& _volume);
 
+	RAM(const RAM& _RAM);
+
 	string getMake() const;
 	string getModel() const;
 	string getFormFactor() const;

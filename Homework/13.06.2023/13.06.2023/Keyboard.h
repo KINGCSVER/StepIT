@@ -17,6 +17,8 @@ public:
 	Keyboard(string& _make, string& _model, string& _type, string& _connectionType, string& _spillResistance, string& _compatibleWithOC,
 		uint16_t& _pollingFrequency);
 
+	Keyboard(const Keyboard& _keyboard);
+
 	string getMake() const;
 	string getModel() const;
 	string getType() const;

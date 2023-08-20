@@ -21,6 +21,8 @@ public:
 		uint16_t& _maximumResolution, uint16_t& _pixelResponseTime, uint16_t& pixelSize,
 		uint16_t& pixelDensity, uint16_t& maximumScreenRefreshRate);
 
+	Monitor(const Monitor& _monitor);
+
 	string getMake() const;
 	string getModel() const;
 	string getScreenCover() const;

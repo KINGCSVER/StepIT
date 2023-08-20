@@ -19,10 +19,13 @@ public:
 	Mouse(string& _make, string& _model, string& _sensortype, string& _connectionType, uint16_t& _frequency, uint16_t& _numberOfButtons,
 		uint16_t& _responseTime, uint16_t& _DPI, uint16_t& _weight);
 
+	Mouse(const Mouse& _mouse);
+
 	string getMake() const;
 	string getModel() const;
 	string getSensorType() const;
 	string getConnectiontype() const;
+
 	uint16_t getFrequency() const;
 	uint16_t getNumberOfButtons() const;
 	uint16_t getResponseTime() const;

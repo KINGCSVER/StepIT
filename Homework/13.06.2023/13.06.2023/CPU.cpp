@@ -9,6 +9,15 @@ CPU::CPU(string& _make, string& _model, uint16_t& _frequency, string& _performan
 	this->socket = _socket;
 }
 
+CPU::CPU(const CPU& _CPU)
+{
+	this->make = _CPU.make;
+	this->model = _CPU.model;
+	this->frequency = new uint16_t(*_CPU.frequency);
+	this->performance = _CPU.performance;
+	this->socket = _CPU.socket;
+}
+
 string CPU::getMake() const
 {
 	return this->make;
@@ -19,11 +28,6 @@ string CPU::getModel() const
 	return this->model;
 }
 
-uint16_t CPU::getFrequency() const
-{
-	return *this->frequency;
-}
-
 string CPU::getPerformance() const
 {
 	return this->performance;
@@ -32,6 +36,11 @@ string CPU::getPerformance() const
 string CPU::getSocket() const
 {
 	return this->socket;
+}
+
+uint16_t CPU::getFrequency() const
+{
+	return *this->frequency;
 }
 
 void CPU::printDataCPU() const
