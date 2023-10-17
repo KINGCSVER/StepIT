@@ -20,7 +20,6 @@
         {
             mainPanel = new Panel();
             clearButton = new Button();
-            historyButton = new Button();
             calculatorTextBox = new RichTextBox();
             backspaceButton = new Button();
             divisionButton = new Button();
@@ -46,7 +45,6 @@
             // mainPanel
             // 
             mainPanel.Controls.Add(clearButton);
-            mainPanel.Controls.Add(historyButton);
             mainPanel.Controls.Add(calculatorTextBox);
             mainPanel.Controls.Add(backspaceButton);
             mainPanel.Controls.Add(divisionButton);
@@ -83,20 +81,10 @@
             clearButton.UseVisualStyleBackColor = true;
             clearButton.Click += clearButton_Click;
             // 
-            // historyButton
-            // 
-            historyButton.Location = new Point(273, 0);
-            historyButton.Name = "historyButton";
-            historyButton.Size = new Size(56, 43);
-            historyButton.TabIndex = 31;
-            historyButton.Text = "History";
-            historyButton.UseVisualStyleBackColor = true;
-            historyButton.Click += historyButton_Click;
-            // 
             // calculatorTextBox
             // 
             calculatorTextBox.Font = new Font("Segoe UI", 32F, FontStyle.Regular, GraphicsUnit.Point);
-            calculatorTextBox.Location = new Point(3, 49);
+            calculatorTextBox.Location = new Point(3, 27);
             calculatorTextBox.Name = "calculatorTextBox";
             calculatorTextBox.RightToLeft = RightToLeft.Yes;
             calculatorTextBox.Size = new Size(326, 68);
@@ -320,7 +308,6 @@
         private Button dotButton;
         private Button numberzeroButton;
         private Button numberSignChangeButton;
-        private Button historyButton;
         private RichTextBox calculatorTextBox;
         private Button backspaceButton;
         private Button divisionButton;
