@@ -9,7 +9,7 @@ CREATE TABLE Groups
 CREATE TABLE Departments
 (
 	Id int primary key identity(1, 1),
-	Financing int not null check(Financing >= 0) default 0,
+	Financing money not null check(Financing >= 0) default 0,
 	Name nvarchar(100) unique not null
 )
 
