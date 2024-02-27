@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AvtoResetEventHW", "AvtoResetEventHW\AvtoResetEventHW.csproj", "{AAAE8BFA-C8BF-46C8-BFD7-EAB8703ED94C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManualResetEventHW", "ManualResetEventHW\ManualResetEventHW.csproj", "{3EF100CC-E6B6-42CD-8007-B4759A347CDD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AAAE8BFA-C8BF-46C8-BFD7-EAB8703ED94C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAAE8BFA-C8BF-46C8-BFD7-EAB8703ED94C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAAE8BFA-C8BF-46C8-BFD7-EAB8703ED94C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAAE8BFA-C8BF-46C8-BFD7-EAB8703ED94C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EF100CC-E6B6-42CD-8007-B4759A347CDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EF100CC-E6B6-42CD-8007-B4759A347CDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EF100CC-E6B6-42CD-8007-B4759A347CDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EF100CC-E6B6-42CD-8007-B4759A347CDD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4D0E4CC4-3D9A-4B44-842E-F37E31254A4B}
+	EndGlobalSection
+EndGlobal
